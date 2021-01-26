@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6262394425C0CE390027FF60 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6262394325C0CE380027FF60 /* Card.swift */; };
+		6262395225C0DD6D0027FF60 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6262395125C0DD6D0027FF60 /* Deck.swift */; };
+		6262396725C0DF7F0027FF60 /* DeckController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6262396625C0DF7F0027FF60 /* DeckController.swift */; };
 		7E62A23823AA9BB700D23AFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E62A23723AA9BB700D23AFA /* AppDelegate.swift */; };
 		7E62A23A23AA9BB700D23AFA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E62A23923AA9BB700D23AFA /* SceneDelegate.swift */; };
 		7E62A23F23AA9BB700D23AFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E62A23D23AA9BB700D23AFA /* Main.storyboard */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6262394325C0CE380027FF60 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		6262395125C0DD6D0027FF60 /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		6262396625C0DF7F0027FF60 /* DeckController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DeckController.swift; path = ../../../../../../DeckController.swift; sourceTree = "<group>"; };
 		7E62A23423AA9BB700D23AFA /* DeckOfOneCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeckOfOneCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E62A23723AA9BB700D23AFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E62A23923AA9BB700D23AFA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +44,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6262395925C0DE8D0027FF60 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6262396625C0DF7F0027FF60 /* DeckController.swift */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		6262395C25C0DEAD0027FF60 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6262394325C0CE380027FF60 /* Card.swift */,
+				6262395125C0DD6D0027FF60 /* Deck.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		7E62A22B23AA9BB700D23AFA = {
 			isa = PBXGroup;
 			children = (
@@ -59,9 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				7E62A23D23AA9BB700D23AFA /* Main.storyboard */,
-				7E62A25523AA9D5300D23AFA /* View Controllers */,
-				7E62A25423AA9D4800D23AFA /* Model Controllers */,
-				7E62A25223AA9D3E00D23AFA /* Models */,
+				6262395C25C0DEAD0027FF60 /* Models */,
+				6262395925C0DE8D0027FF60 /* Model Controllers */,
 				7E62A25323AA9D4200D23AFA /* Helpers */,
 				7E62A24B23AA9BBE00D23AFA /* Resources */,
 			);
@@ -80,33 +102,12 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		7E62A25223AA9D3E00D23AFA /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		7E62A25323AA9D4200D23AFA /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				7E62A25023AA9D3400D23AFA /* UIViewControllerExtension.swift */,
 			);
 			path = Helpers;
-			sourceTree = "<group>";
-		};
-		7E62A25423AA9D4800D23AFA /* Model Controllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Model Controllers";
-			sourceTree = "<group>";
-		};
-		7E62A25523AA9D5300D23AFA /* View Controllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +137,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = Warren;
 				TargetAttributes = {
 					7E62A23323AA9BB700D23AFA = {
@@ -181,8 +182,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E62A25123AA9D3400D23AFA /* UIViewControllerExtension.swift in Sources */,
+				6262396725C0DF7F0027FF60 /* DeckController.swift in Sources */,
 				7E62A23823AA9BB700D23AFA /* AppDelegate.swift in Sources */,
+				6262395225C0DD6D0027FF60 /* Deck.swift in Sources */,
 				7E62A23A23AA9BB700D23AFA /* SceneDelegate.swift in Sources */,
+				6262394425C0CE390027FF60 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +238,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -294,6 +299,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
