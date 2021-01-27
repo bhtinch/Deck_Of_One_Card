@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="R01-Cn-ogS">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Card View Controller-->
+        <scene sceneID="sGY-0Z-TKh">
+            <objects>
+                <viewController id="R01-Cn-ogS" customClass="CardViewController" customModule="DeckOfOneCard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IZa-P0-4L8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(value) of (suit)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sRR-e3-r3e">
+                                <rect key="frame" x="20.5" y="204" width="373" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elC-lZ-7Rd">
+                                <rect key="frame" x="173" y="797" width="68" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="DRAW"/>
+                                <connections>
+                                    <action selector="drawButtonTapped:" destination="R01-Cn-ogS" eventType="touchUpInside" id="Mk0-ZW-ppa"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="skw-cA-Qf9">
+                                <rect key="frame" x="52" y="257" width="310.5" height="492"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dAx-36-yHn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sRR-e3-r3e" firstAttribute="width" secondItem="IZa-P0-4L8" secondAttribute="width" multiplier="0.9" id="1Si-gp-GUp"/>
+                            <constraint firstItem="elC-lZ-7Rd" firstAttribute="top" secondItem="skw-cA-Qf9" secondAttribute="bottom" constant="48" id="6XR-MK-Aox"/>
+                            <constraint firstItem="skw-cA-Qf9" firstAttribute="centerX" secondItem="dAx-36-yHn" secondAttribute="centerX" id="NT1-Rh-l7k"/>
+                            <constraint firstItem="skw-cA-Qf9" firstAttribute="top" secondItem="sRR-e3-r3e" secondAttribute="bottom" constant="24" id="dsa-re-GOJ"/>
+                            <constraint firstItem="elC-lZ-7Rd" firstAttribute="centerX" secondItem="dAx-36-yHn" secondAttribute="centerX" id="elH-YM-KOr"/>
+                            <constraint firstItem="skw-cA-Qf9" firstAttribute="width" secondItem="IZa-P0-4L8" secondAttribute="width" multiplier="0.75" id="q7s-EH-tfA"/>
+                            <constraint firstItem="sRR-e3-r3e" firstAttribute="top" secondItem="dAx-36-yHn" secondAttribute="top" constant="160" id="ruU-ht-kfr"/>
+                            <constraint firstItem="dAx-36-yHn" firstAttribute="bottom" secondItem="elC-lZ-7Rd" secondAttribute="bottom" constant="24" id="vRP-JB-yWM"/>
+                            <constraint firstItem="sRR-e3-r3e" firstAttribute="centerX" secondItem="dAx-36-yHn" secondAttribute="centerX" id="zkZ-Ia-NZ5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cardImageView" destination="skw-cA-Qf9" id="Qns-bR-XWY"/>
+                        <outlet property="cardLabel" destination="sRR-e3-r3e" id="VL4-Ct-jLQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZKM-Hs-mUX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="366" y="-254"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
